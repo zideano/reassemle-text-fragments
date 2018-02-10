@@ -55,8 +55,7 @@ public class AssembleTextFragment {
         String referenceString = text.get(0);
         text.remove(referenceString);
 
-        referenceString = iterateStringForOverlap(maxOverlap, other, iterations, text, referenceString);
-        return referenceString;
+        return iterateStringForOverlap(maxOverlap, other, iterations, text, referenceString);
     }
 
     private String iterateStringForOverlap(int maxOverlap, String other, int iterations, List<String> text, String referenceString) {
